@@ -9,10 +9,10 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <nav class="navbar navbar-light bg-dark justify-content-center bgGradient mb-4">
-          <a class="navbar-brand" href="http://localhost:3000/">
+        <nav className="navbar navbar-light bg-dark justify-content-center bgGradient mb-4">
+          <a className="navbar-brand" href="http://localhost:3000/">
             <img
-              src="../src/images/tmdb_nobg.png"
+              src="/images/tmdb_nobg.png"
               width="125"
               height="125"
               alt="logo"

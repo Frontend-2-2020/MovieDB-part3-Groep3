@@ -24,8 +24,12 @@ class App extends Component {
           <Route path="/" exact component={Overzicht} />
           <Route path="/" component={Page404} />
         </Switch>
+
         <div>
-          <h1>Hello to u 2</h1>
+          <Overzicht />
+        </div>
+        <div>
+          <Detail />
         </div>
       </Router>
     );

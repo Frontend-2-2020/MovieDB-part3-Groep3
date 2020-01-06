@@ -3,6 +3,7 @@ import Detail from "./pages/Detail";
 import Overzicht from "./pages/Overzicht";
 import Page404 from "./pages/Page404";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import bootstrap from "bootstrap/dist/css/bootstrap.min.css";
 
 class App extends Component {
   render() {

@@ -10,28 +10,24 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <nav className="navbar navbar-light bg-dark justify-content-center bgGradient mb-4">
-          <a className="navbar-brand" href="http://localhost:3000/">
-            <img
-              src="/images/tmdb_nobg.png"
-              width="125"
-              height="125"
-              alt="logo"
-            />
-          </a>
-        </nav>
+        <Link to="/">
+          <nav className="navbar navbar-light bg-dark justify-content-center bgGradient mb-4">
+            <a className="navbar-brand" href="http://localhost:3000/">
+              <img
+                src="/images/tmdb_nobg.png"
+                width="125"
+                height="125"
+                alt="logo"
+              />
+            </a>
+          </nav>
+        </Link>
+
         <Switch>
           <Route path="/Detail" component={Detail} />
           <Route path="/" exact component={Overzicht} />
           <Route path="/" component={Page404} />
         </Switch>
-
-        <div>
-          <Overzicht />
-        </div>
-        <div>
-          <Detail />
-        </div>
       </Router>
     );
   }

@@ -16,7 +16,7 @@ class App extends Component {
         </Link>
 
         <Switch>
-          <Route path="/Detail" component={Detail} />
+          <Route path="/Detail/:MovieDetail" component={Detail} />
           <Route path="/" exact component={Overzicht} />
           <Route path="/" component={Page404} />
         </Switch>

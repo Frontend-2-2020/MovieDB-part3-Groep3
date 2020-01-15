@@ -3,7 +3,7 @@ import React, { Component } from "react";
 //Filling out our movieCard with the data from our props
 class MovieCard extends Component {
   render() {
-    let movieLink = "/Detail/?movie=";
+    let movieLink = "/Detail/";
     const movieProp = this.props.movie;
     return (
       <div className="col-lg-3 col-md-4 col-sm-6 col-12" key={this.props.index}>

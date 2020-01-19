@@ -12,7 +12,7 @@ class ScrollButton extends Component {
   render() {
     return (
       <div
-        idName="toTop"
+        id="toTop"
         className="btn btn-outline-warning btn-lg d-flex justify-content-center"
         onClick={this.toTop}
       >

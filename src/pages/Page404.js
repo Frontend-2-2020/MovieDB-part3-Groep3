@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+// A lazy 404
 class Page404 extends Component {
   render() {
     return (

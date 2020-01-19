@@ -11,7 +11,7 @@ class MovieCard extends Component {
           <img
             className="card-img-top"
             src={"https://image.tmdb.org/t/p/w500/" + movieProp.poster_path}
-            alt="Card image cap"
+            alt="Card cap"
           />
           <div className="card-body">
             <a href={movieLink + movieProp.id} className="btn btn-primary">

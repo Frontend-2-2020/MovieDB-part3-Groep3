@@ -8,7 +8,7 @@ import MovieCard from "../Components/MovieCard";
 import ScrollButton from "../Components/ScrollButton";
 
 class Overzicht extends Component {
-  // Defining our state with an empty array
+  // Defining our state to catch our Data in
   state = {
     movies: [],
     dataList: [],
@@ -31,11 +31,11 @@ class Overzicht extends Component {
         movies: response.data.results,
         dataList: response.data
       });
-      console.log(response.data);
     });
   }
+
+  // Updating our State  and
   onChange = current => {
-    console.log(current);
     this.setState(
       {
         page: current
@@ -44,7 +44,7 @@ class Overzicht extends Component {
     );
   };
 
-  // Making our container filled with our MovieCards and passing our props
+  // Making our container with our mapped out MovieCards and passing on our props
   render() {
     return (
       <div className="container-fluid">

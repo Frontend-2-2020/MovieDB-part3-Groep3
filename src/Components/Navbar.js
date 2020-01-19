@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+// Our Navbar with a link on the img to the Homepage
 class Navbar extends Component {
   render() {
     return (

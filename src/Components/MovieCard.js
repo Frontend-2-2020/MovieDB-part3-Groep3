@@ -14,7 +14,7 @@ class MovieCard extends Component {
             alt="Card image cap"
           />
           <div className="card-body">
-            <a href={movieLink + movieProp.id} class="btn btn-primary">
+            <a href={movieLink + movieProp.id} className="btn btn-primary">
               Details
             </a>
             <h5 className="card-title">{movieProp.title}</h5>

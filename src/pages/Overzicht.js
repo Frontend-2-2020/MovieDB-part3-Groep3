@@ -37,10 +37,12 @@ class Overzicht extends Component {
   }
   onChange = current => {
     console.log(current);
-    this.setState({
-      page: current
-    });
-    this.getMovies();
+    this.setState(
+      {
+        page: current
+      },
+      () => this.getMovies()
+    );
   };
 
   // Making our container filled with our MovieCards and passing our props

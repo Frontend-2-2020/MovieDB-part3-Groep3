@@ -11,9 +11,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <Link to="/">
-          <Navbar />
-        </Link>
+        <Navbar />
 
         <Switch>
           <Route path="/Detail/:MovieDetail" component={Detail} />

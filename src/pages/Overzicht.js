@@ -26,7 +26,6 @@ class Overzicht extends Component {
         this.state.page +
         "&api_key=" +
         KEY
-      //https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&page=" + page + "&api_key=" + KEY
     ).then(response => {
       this.setState({
         movies: response.data.results,
@@ -55,8 +54,8 @@ class Overzicht extends Component {
           total={this.state.dataList.total_pages}
         />
         <div className="row">
-          {this.state.movies.map((movie, index) => (
-            <MovieCard movie={movie} />
+          {this.state.movies.map(movie => (
+            <MovieCard movie={movie} key={movie.id} />
           ))}
         </div>
         <ScrollButton />

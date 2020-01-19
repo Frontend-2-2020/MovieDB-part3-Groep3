@@ -40,6 +40,7 @@ class Overzicht extends Component {
     this.setState({
       page: current
     });
+    this.getMovies();
   };
 
   // Making our container filled with our MovieCards and passing our props

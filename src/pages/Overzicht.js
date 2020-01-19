@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { KEY } from "../config.js";
 import Axios from "axios";
-import bootstrap from "bootstrap/dist/css/bootstrap.min.css";
+
 import MovieCard from "../Components/MovieCard";
 import ScrollButton from "../Components/ScrollButton";
 
